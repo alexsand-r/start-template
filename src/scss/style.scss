@@ -1,0 +1,30 @@
+
+@import "variables.scss"; // імпорт файла змінних
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page {
+    flex: 1 1 auto;
+  
+}
+
+[class*="__container"] {
+    max-width: 800px;
+    /*  добавляем 30 пикселей  два по 15 к основному размеру из за пад 15 рх*/
+    margin: 0 auto;
+    padding: 0 15px;
+    /* -- добавляем 15 пик чтобы не прилипал контент - адаптация  */
+
+}
+
